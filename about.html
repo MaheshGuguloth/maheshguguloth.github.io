@@ -8,6 +8,40 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <link rel="stylesheet" href="assets/css/main.css" />
+        <style>
+            .additional-section {
+                margin-top: 30px;
+                padding: 20px;
+                background-color: #f7f7f7;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+            .additional-section h2 {
+                font-size: 1.8em;
+                color: #333;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+            .additional-section ul {
+                list-style-type: none;
+                padding: 0;
+                color: #555;
+                line-height: 1.6;
+                font-size: 1.1em;
+            }
+            .additional-section li {
+                margin: 10px 0;
+                padding-left: 1em;
+                position: relative;
+            }
+            .additional-section li::before {
+                content: "•";
+                position: absolute;
+                left: 0;
+                color: #007bff;
+                font-weight: bold;
+            }
+        </style>
     </head>
     <body class="is-preload">
 
@@ -22,7 +56,6 @@
                                 <header id="header">
                                     <a href="index.html" class="logo"><strong>Data Engineering</strong> by Mahesh</a>
                                     <ul class="icons">
-                                        <li><a href="https://twitter.com" class="icon brands fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
                                         <li><a href="https://www.linkedin.com/in/mahesh-g-072670321/?trk=opento_sprofile_topcard" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
                                     </ul>
                                 </header>
@@ -44,6 +77,25 @@
                                     <a href="resume.pdf" download style="display: inline-block; padding: 12px 25px; margin-top: 20px; background-color: #007bff; color: #fff; text-decoration: none; border-radius: 5px; font-weight: bold;">
                                         Download Resume
                                     </a>
+                                </section>
+
+                                <!-- Hobbies & Interests Section -->
+                                <section class="additional-section">
+                                    <h2>Hobbies & Interests</h2>
+                                    <ul>
+                                        <li>Playing cricket and chess, engaging in strategic thinking and teamwork.</li>
+                                        <li>Reading mythological books, exploring cultural stories and histories.</li>
+                                    </ul>
+                                </section>
+
+                                <!-- Achievements Section -->
+                                <section class="additional-section">
+                                    <h2>Key Achievements</h2>
+                                    <ul>
+                                        <li>Led National Social Service as Team Lead, managing multiple community service projects and promoting social welfare.</li>
+                                        <li>Organized medical camps as a volunteer with Bachpan Prayas NGO, contributing to community health awareness.</li>
+                                        <li>Graduated with academic excellence in Bachelor of Electronics.</li>
+                                    </ul>
                                 </section>
 
                             <!-- Footer -->
