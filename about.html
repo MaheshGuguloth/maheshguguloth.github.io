@@ -17,17 +17,18 @@
             padding: 0;
         }
 
-              /* Header Section */
+        /* Header Section */
         #header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 20px;
-            border-bottom: none; /* Removes bottom border */
+            border-bottom: none;
         }
         #header .logo {
             font-size: 1.8em;
             text-decoration: none;
+            color: #fff;
         }
         #header .menu {
             display: flex;
@@ -43,6 +44,7 @@
         #header .menu a:hover {
             color: #ffcb05;
         }
+
         /* Contact Icons in Header */
         .header-icons a {
             color: #ffcb05;
@@ -56,22 +58,12 @@
 
         /* Main Section Layout */
         #main {
-            display: flex;
-            align-items: center;
             max-width: 1000px;
             margin: 0 auto;
             padding: 40px 20px;
         }
         
-        /* Profile Picture Styling */
-        .profile-pic img {
-            width: 350px;
-            height: 400px;
-            margin-right: 40px;
-        }
-
         /* Intro Text Styling */
-        
         .intro h1 {
             font-size: 2.5em;
             font-weight: bold;
@@ -83,31 +75,72 @@
             text-align: justify;
         }
 
-        /* Vibrant Footer Section */
+        /* Download Button Styling */
+        .download-resume {
+            display: inline-block;
+            padding: 12px 25px;
+            margin-top: 20px;
+            background-color: #ffcb05;
+            color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        /* Footer Section */
         footer {
-            position: relative;
-            bottom: 10px;
-            right: 10px;
             font-size: 0.8em;
             color: #ffcb05;
             text-align: right;
+            padding: 10px 20px;
         }
         footer p {
             margin: 0;
         }
-       /* Download Button Styling */
-            .download-resume {
-                display: inline-block;
-                padding: 12px 25px;
-                margin-top: 20px;
-                background-color: #ffcb05;
-                color: #333;
-                text-decoration: none;
-                border-radius: 5px;
-                font-weight: bold;
-            }
-        
 
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            #header {
+                flex-direction: column;
+                align-items: center;
+            }
+            #header .logo {
+                font-size: 1.5em;
+                margin-bottom: 10px;
+            }
+            #header .menu {
+                flex-direction: column;
+                gap: 10px;
+            }
+            #main {
+                text-align: center;
+            }
+            .intro h1 {
+                font-size: 2em;
+            }
+            .intro p {
+                font-size: 1em;
+            }
+            .download-resume {
+                margin-top: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-icons a {
+                font-size: 1em;
+                margin: 0 5px;
+            }
+            .intro h1 {
+                font-size: 1.8em;
+            }
+            .intro p {
+                font-size: 0.9em;
+            }
+            footer {
+                font-size: 0.7em;
+            }
+        }
     </style>
 </head>
 <body>
@@ -134,7 +167,6 @@
 
     <!-- Main Content Section -->
     <div id="main">
-    
         <div class="intro">
             <p>Hi, I'm Mahesh Naik Guguloth, a dedicated Data Engineer with over four years of hands-on experience in transforming complex data into actionable insights. My fascination with data began early, driven by a deep-seated curiosity about how information shapes our decisions and lives. This passion paved the way for my career, where I specialize in designing and optimizing data pipelines that empower organizations to harness their data effectively.</p>
             <p>Throughout my career, I’ve had the privilege of working with advanced technologies like AWS Glue, S3, Athena, and Snowflake, as well as big data platforms such as Hadoop and Spark. My goal has always been to build scalable, high-performance data solutions that prioritize accuracy, efficiency, and accessibility. My technical expertise extends beyond just tools and technologies—it's about making data work seamlessly for businesses, ensuring they have timely, reliable insights to drive informed decisions.</p>
@@ -146,10 +178,9 @@
         </div>
     </div>
 
-    <!-- Footer Section with Icons -->
+    <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 Mahesh Naik Guguloth. All Rights Reserved.</p>
-        
     </footer>
 
 </body>
