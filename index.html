@@ -1,157 +1,127 @@
 <!DOCTYPE HTML>
 <html>
-    <head>
-        <title>Mahesh Naik Guguloth</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="assets/css/main.css" />
+<head>
+    <title>Mahesh Naik Guguloth</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
 
-        <!-- Additional styling to remove side gaps and customize header -->
-        <style>
-            /* Remove side gaps */
-            #wrapper {
-                margin: 0 auto;
-                max-width: 1200px;
-                padding: 0 20px;
-            }
+    <style>
+        /* Basic Styling */
+        body {
+            font-family: Arial, sans-serif;
+            color: #fff;
+            background-color: #3b5998; /* Change to preferred background color */
+            margin: 0;
+            padding: 0;
+        }
 
-            /* Header and Navigation Styling */
-            #header {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 20px;
-                background-color: #333;
-                color: #fff;
-            }
-            #header .logo {
-                font-size: 1.5em;
-                color: #ffcb05; /* Yellow color for a vibrant look */
-                text-decoration: none;
-            }
-            .menu {
-                display: flex;
-                gap: 20px;
-            }
-            .menu li {
-                list-style: none;
-                position: relative;
-            }
-            .menu a {
-                text-decoration: none;
-                color: #fff;
-                font-weight: bold;
-                padding: 5px 10px;
-                transition: color 0.3s;
-            }
-            .menu a:hover {
-                color: #ffcb05; /* Yellow hover color */
-            }
+        /* Header Section */
+        #header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #333;
+        }
+        #header .logo {
+            font-size: 1.8em;
+            color: #ffcb05; /* Highlighted color for name */
+            text-decoration: none;
+        }
+        #header .menu {
+            display: flex;
+            gap: 20px;
+        }
+        #header .menu a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        #header .menu a:hover {
+            color: #ffcb05;
+        }
 
-            /* Dropdown Menu Styling */
-            .submenu {
-                display: none;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                background-color: #444;
-                border-radius: 4px;
-                padding: 10px 0;
-                z-index: 1;
-            }
-            .submenu li {
-                padding: 5px 20px;
-            }
-            .submenu a {
-                color: #ffcb05; /* Yellow for submenu items */
-                display: block;
-            }
-            .submenu a:hover {
-                color: #fff;
-                background-color: #666;
-            }
+        /* Main Section Layout */
+        #main {
+            display: flex;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        /* Profile Picture Styling */
+        .profile-pic img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            margin-right: 40px;
+            border: 4px solid #ffcb05;
+        }
 
-            /* Show submenu on hover */
-            .menu li:hover .submenu {
-                display: block;
-            }
+        /* Intro Text Styling */
+        .intro {
+            max-width: 600px;
+        }
+        .intro h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #ffcb05;
+        }
+        .intro p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
 
-            /* Responsive styling for smaller screens */
-            @media (max-width: 768px) {
-                .menu {
-                    flex-direction: column;
-                    gap: 10px;
-                }
-            }
-        </style>
-    </head>
-    <body class="is-preload">
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            font-size: 0.9em;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
 
-        <!-- Wrapper -->
-        <div id="wrapper">
+    <!-- Header Section -->
+    <header id="header">
+        <a href="index.html" class="logo">Mahesh Naik Guguloth</a>
+        <nav class="menu">
+            <a href="about.html">About</a>
+            <a href="experience.html">Experience</a>
+            <a href="projects.html">Projects</a>
+            <a href="skills.html">Technical Skills</a>
+            <a href="certifications.html">Certifications</a>
+            <a href="https://www.linkedin.com/in/mahesh-g-072670321/" target="_blank">LinkedIn</a>
+        </nav>
+    </header>
 
-            <!-- Main -->
-            <div id="main">
-                <div class="inner">
-
-                    <!-- Header with Menu -->
-                    <header id="header">
-                        <!-- Updated to Mahesh Naik Guguloth as the homepage link -->
-                        <a href="index.html" class="logo"><strong>Mahesh Naik Guguloth</strong></a>
-                        <ul class="menu">
-                            <li><a href="about.html">My Story</a></li>
-                            <li><a href="experience.html">Experience</a></li>
-                            <li><a href="projects.html">Projects</a></li>
-                            <li><a href="skills.html">Technical Skills</a></li>
-                            <li><a href="certifications.html">Certifications</a></li>
-                            <!-- Dropdown menu for Portfolio -->
-                            <li>
-                                <a href="#">Portfolio</a>
-                                <ul class="submenu">
-                                    <li><a href="data-visualization.html">Data Visualization</a></li>
-                                    <li><a href="etl-processes.html">ETL Processes</a></li>
-                                    <li><a href="cloud-computing.html">Cloud Computing</a></li>
-                                    <li><a href="machine-learning.html">Machine Learning</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/in/mahesh-g-072670321/?trk=opento_sprofile_topcard" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a>
-                            </li>
-                        </ul>
-                    </header>
-
-                    <!-- Banner Section -->
-                    <section id="banner">
-                        <div class="content">
-                            <header>
-                                <h1>Hi, I'm Mahesh Naik Guguloth<br /></h1>
-                                <p>Data Engineer</p>
-                            </header>
-                            <p><strong>I am passionate about designing and implementing data-driven solutions that power business intelligence and drive actionable insights.</strong> With over <strong>4 years of hands-on experience</strong> in data engineering, I specialize in <strong>building robust, scalable data pipelines</strong> and <strong>optimizing ETL processes</strong> to enhance data accessibility and efficiency.</p>
-
-                            <p>My expertise lies in leveraging AWS technologies—including <strong>AWS Glue, S3, and Athena</strong>—to streamline workflows, reduce processing times, and deliver seamless data solutions tailored to organizational needs. <strong>By continuously advancing my practices</strong>, I help organizations unlock the full potential of their data, enabling impactful, data-driven decisions.</p>
-                        </div>
-                        <span class="image object">
-                            <img src="images/IMG_4036.JPG" alt="Profile Picture" />
-                        </span>
-                    </section>
-
-                    <!-- Footer -->
-                    <footer style="background-color: #333; color: #fff; padding: 10px 20px; text-align: center; font-size: 0.9em; line-height: 1.2;">
-                        <p>&copy; 2024 Mahesh Naik Guguloth. All Rights Reserved.</p>
-                        <p>Dedicated to empowering businesses with efficient data engineering solutions.</p>
-                    </footer>
-                </div>
-            </div>
-
+    <!-- Main Content Section -->
+    <div id="main">
+        <!-- Profile Picture -->
+        <div class="profile-pic">
+            <img src="images/IMG_4036.JPG" alt="Profile Picture of Mahesh Naik Guguloth">
         </div>
 
-        <!-- Scripts -->    
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/browser.min.js"></script>
-        <script src="assets/js/breakpoints.min.js"></script>
-        <script src="assets/js/util.js"></script>
-        <script src="assets/js/main.js"></script>
+        <!-- Intro Text -->
+        <div class="intro">
+            <h1>Hi, I'm Mahesh Naik Guguloth</h1>
+            <p><strong>Data Engineer</strong> with a passion for building data-driven solutions that power business intelligence and drive actionable insights. With over <strong>4 years of hands-on experience</strong> in data engineering, I specialize in designing and implementing robust, scalable data pipelines and optimizing ETL processes to enhance data accessibility and efficiency.</p>
 
-    </body>
+            <p>My expertise lies in leveraging AWS technologies, including <strong>AWS Glue, S3, and Athena</strong>, to streamline workflows, reduce processing times, and deliver seamless data solutions tailored to organizational needs. I am dedicated to continuously advancing my practices to help organizations unlock the full potential of their data, enabling impactful, data-driven decisions.</p>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Mahesh Naik Guguloth. All Rights Reserved.</p>
+        <p>Dedicated to empowering businesses with efficient data engineering solutions.</p>
+    </footer>
+
+</body>
 </html>
