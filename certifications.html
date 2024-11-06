@@ -1,175 +1,192 @@
 <!DOCTYPE HTML>
-<!--
-    Certifications - Mahesh Naik Guguloth
--->
 <html>
-    <head>
-        <title>Certifications - Mahesh Naik Guguloth</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="assets/css/main.css" />
-        <style>
-            .certifications-section {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: 20px;
-                margin-top: 30px;
-            }
-            .certification-card {
-                background-color: #f7f7f7;
-                border-radius: 8px;
-                padding: 20px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                text-align: center;
-            }
-            .certification-card h3 {
-                font-size: 1.4em;
-                color: #333;
-                margin-bottom: 5px;
-            }
-            .certification-card p {
-                font-size: 1.1em;
-                color: #666;
-                margin: 5px 0;
-            }
-            .certification-card .icon {
-                font-size: 2em;
-                color: #007bff;
-                margin-bottom: 10px;
-            }
-            .certification-card a {
-                display: inline-block;
-                margin-top: 10px;
-                padding: 10px 20px;
-                color: #fff;
-                background-color: #007bff;
-                border-radius: 5px;
-                text-decoration: none;
-                font-weight: bold;
-            }
-        </style>
-    </head>
-    <body class="is-preload">
+<head>
+    <title>Certifications - Mahesh Naik Guguloth</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnH/PrY+PLT3rXzIs4ozqtdQFzYgL0O9cwFyJWgRYoGr4uaKQ04KgY07FhrSjeicNLvVd1eHg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <!-- Wrapper -->
-            <div id="wrapper">
+    <style>
+        /* Basic Styling */
+        body {
+            font-family: Arial, sans-serif;
+            color: #fff;
+            background-color: #3b5998;
+            margin: 0;
+            padding: 0;
+        }
 
-                <!-- Main -->
-                    <div id="main">
-                        <div class="inner">
+        /* Header Section */
+        #header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            border-bottom: none;
+        }
+        #header .logo {
+            font-size: 1.8em;
+            text-decoration: none;
+            color: #fff;
+        }
+        #header .menu {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        #header .menu a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        #header .menu a:hover {
+            color: #ffcb05;
+        }
 
-                            <!-- Header -->
-                                <header id="header">
-                                    <a href="index.html" class="logo"><strong>Data Engineering</strong> by Mahesh</a>
-                                    <ul class="icons">
-                                        <li><a href="https://www.linkedin.com/in/mahesh-g-072670321/?trk=opento_sprofile_topcard" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
-                                    </ul>
-                                </header>
+        /* Contact Icons in Header */
+        .header-icons a {
+            color: #ffcb05;
+            margin-left: 10px;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+        .header-icons a:hover {
+            color: #ff6347;
+        }
 
-                            <!-- Content -->
-                                <section id="certifications">
+        /* Main Section Layout */
+        #main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
 
-                                    <!-- Certifications Grid -->
-                                    <div class="certifications-section">
-                                        <!-- Certification 1 -->
-                                        <div class="certification-card">
-                                            <span class="icon solid fa-certificate"></span>
-                                            <h3>SQL and PostgreSQL Bootcamp </h3>
-                                            <p><strong>Issued By:</strong> Udemy </p>
-                                            <p><strong>Date:</strong> August 2023</p>
-                                            <a href="https://www.udemy.com/certificate/UC-8328e314-52f5-47bc-9ea8-12e18a6ea707/">View Certificate</a>
-                                        </div>
+        /* Certifications Section */
+        .certifications-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .certification-card {
+            background-color: #f7f7f7;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .certification-card h3 {
+            font-size: 1.4em;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        .certification-card p {
+            font-size: 1.1em;
+            color: #666;
+            margin: 5px 0;
+        }
+        .certification-card .icon {
+            font-size: 2em;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+        .certification-card a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            color: #fff;
+            background-color: #007bff;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-                                        <!-- Certification 2 -->
-                                        <div class="certification-card">
-                                            <span class="icon solid fa-certificate"></span>
-                                            <h3>SnowPro Core Certification</h3>
-                                            <p><strong>Issued By:</strong> Snowflake</p>
-                                            <p><strong>Date:</strong> October 2024</p>
-                                            <a href="https://achieve.snowflake.com/5ebe3fb7-5f3e-49fc-9260-6ec1456005a5#acc.XkhWErmw">View Certificate</a>
-                                        </div>
+        /* Footer Section */
+        footer {
+            background-color: #333;
+            color: #ffcb05;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
 
-                                        <!-- Certification 3 -->
-                                        <div class="certification-card">
-                                            <span class="icon solid fa-certificate"></span>
-                                            <h3>Data Engineer Professional Certificate</h3>
-                                            <p><strong>Issued By:</strong> DeepLearning.Ai & AWS </p>
-                                            <p><strong>Date:</strong> December 2024</p>
-                                            <a href="https://coursera.org/share/6b0e2f235337c38eeeb50ec1dc3f47a6">View Certificate</a>
-                                        </div>
-
-                                        <!-- Certification 4 -->
-                                        <div class="certification-card">
-                                            <span class="icon solid fa-certificate"></span>
-                                            <h3>Data Sceince Specialization</h3>
-                                            <p><strong>Issued By:</strong> Coursera</p>
-                                            <p><strong>Date:</strong> May 2024</p>
-                                            <a href="https://coursera.org/" target="_blank">View Certificate</a>
-                                        </div>
-                                    </div>
-                                </section>
-
-                            <!-- Footer -->
-                                <footer style="background-color: #333; color: #fff; padding: 5px 20px; text-align: center; line-height: 1.4;">
-                                    <p>&copy; 2024 Mahesh Naik Guguloth. All Rights Reserved.</p>
-                                    <p>Dedicated to empowering businesses with efficient data engineering solutions.</p>
-                                </footer>
-
-                        </div>
-                    </div>
-
-                <!-- Sidebar -->
-                    <div id="sidebar">
-                        <div class="inner">
-
-                            <!-- Menu -->
-                                <nav id="menu">
-                                    <header class="major">
-                                        <h2>Menu</h2>
-                                    </header>
-                                    <ul>
-                                        <li><a href="index.html">Homepage</a></li>
-                                        <li><a href="about.html">My Story</a></li>
-                                        <li><a href="experience.html">Experience</a></li>
-                                        <li><a href="projects.html">Projects</a></li>
-                                        <li><a href="skills.html">Technical Skills</a></li>
-                                        <li><a href="certifications.html">Certifications</a></li>
-                                        
-                                        <li>
-                                            <span class="opener">Portfolio Submenu</span>
-                                            <ul>
-                                                <li><a href="data-visualization.html">Data Visualization</a></li>
-                                                <li><a href="etl-processes.html">ETL Processes</a></li>
-                                                <li><a href="cloud-computing.html">Cloud Computing</a></li>
-                                                <li><a href="machine-learning.html">Machine Learning</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </nav>
-
-                            <!-- Get in Touch Section -->
-                                <section>
-                                    <header class="major">
-                                        <h2>Get in Touch</h2>
-                                    </header>
-                                    <ul class="contact">
-                                        <li class="icon solid fa-envelope"><a href="mailto:maheshn.guguloth@gmail.com">maheshn.guguloth@gmail.com</a></li>
-                                        <li class="icon solid fa-phone">(838) 333 0428</li>
-                                        <li class="icon solid fa-home">723 State St Apt 1, Albany, NY 12203</li>
-                                    </ul>
-                                </section>
-
-                        </div>
-                    </div>
-
+    <!-- Header Section -->
+    <header id="header">
+        <a href="index.html" class="logo">Mahesh Naik Guguloth</a>
+        <nav class="menu">
+            <a href="about.html">About</a>
+            <a href="experience.html">Experience</a>
+            <a href="projects.html">Projects</a>
+            <a href="skills.html">Technical Skills</a>
+            <a href="certifications.html">Certifications</a>
+            
+            <!-- Contact Icons in Header -->
+            <div class="header-icons">
+                <a href="https://www.linkedin.com/in/mahesh-g-072670321/" target="_blank" class="fab fa-linkedin" title="LinkedIn"></a>
+                <a href="tel:+18383330428" class="fas fa-phone" title="Call"></a>
+                <a href="mailto:maheshn.guguloth@gmail.com" class="fas fa-envelope" title="Email"></a>
+                <a href="https://github.com/yourusername" target="_blank" class="fab fa-github" title="GitHub"></a>
             </div>
+        </nav>
+    </header>
 
-        <!-- Scripts -->
-            <script src="assets/js/jquery.min.js"></script>
-            <script src="assets/js/browser.min.js"></script>
-            <script src="assets/js/breakpoints.min.js"></script>
-            <script src="assets/js/util.js"></script>
-            <script src="assets/js/main.js"></script>
+    <!-- Main Content Section -->
+    <div id="main">
+        <section id="certifications">
+            <!-- Certifications Grid -->
+            <div class="certifications-section">
+                <!-- Certification 1 -->
+                <div class="certification-card">
+                    <span class="icon solid fa-certificate"></span>
+                    <h3>SQL and PostgreSQL Bootcamp</h3>
+                    <p><strong>Issued By:</strong> Udemy</p>
+                    <p><strong>Date:</strong> August 2023</p>
+                    <a href="https://www.udemy.com/certificate/UC-8328e314-52f5-47bc-9ea8-12e18a6ea707/">View Certificate</a>
+                </div>
 
-    </body>
+                <!-- Certification 2 -->
+                <div class="certification-card">
+                    <span class="icon solid fa-certificate"></span>
+                    <h3>SnowPro Core Certification</h3>
+                    <p><strong>Issued By:</strong> Snowflake</p>
+                    <p><strong>Date:</strong> October 2024</p>
+                    <a href="https://achieve.snowflake.com/5ebe3fb7-5f3e-49fc-9260-6ec1456005a5#acc.XkhWErmw">View Certificate</a>
+                </div>
+
+                <!-- Certification 3 -->
+                <div class="certification-card">
+                    <span class="icon solid fa-certificate"></span>
+                    <h3>Data Engineer Professional Certificate</h3>
+                    <p><strong>Issued By:</strong> DeepLearning.Ai & AWS</p>
+                    <p><strong>Date:</strong> December 2024</p>
+                    <a href="https://coursera.org/share/6b0e2f235337c38eeeb50ec1dc3f47a6">View Certificate</a>
+                </div>
+
+                <!-- Certification 4 -->
+                <div class="certification-card">
+                    <span class="icon solid fa-certificate"></span>
+                    <h3>Data Science Specialization</h3>
+                    <p><strong>Issued By:</strong> Coursera</p>
+                    <p><strong>Date:</strong> May 2024</p>
+                    <a href="https://coursera.org/" target="_blank">View Certificate</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Mahesh Naik Guguloth. All Rights Reserved.</p>
+        <p>Empowering businesses with efficient data engineering solutions.</p>
+    </footer>
+
+</body>
 </html>
