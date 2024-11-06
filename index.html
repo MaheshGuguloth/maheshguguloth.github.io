@@ -17,33 +17,47 @@
             padding: 0;
         }
 
-        /* Header Section */
+                /* Header Section Styling */
         #header {
             display: flex;
-            justify-content: space-between;
             align-items: center;
             padding: 20px;
-            border-bottom: none; /* Removes bottom border */
+            background-color: #3b5998; /* Background color for header */
+            color: #fff;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
         }
+        
+        /* Logo Styling (Aligned to the Left) */
         #header .logo {
             font-size: 1.8em;
+            color: #ffcb05;
             text-decoration: none;
-            float:right;
         }
+        
+        /* Aligns Menu and Icons to the Right */
         #header .menu {
             display: flex;
             gap: 20px;
             align-items: center;
+            margin-left: auto; /* Pushes items to the right */
         }
+        
         #header .menu a {
             color: #fff;
             text-decoration: none;
             font-weight: bold;
-            transition: color 0.3s;
+            padding: 5px 10px;
+            transition: color 0.3s ease;
         }
+        
+        /* Hover Effect for Menu Links */
         #header .menu a:hover {
             color: #ffcb05;
         }
+
 
         /* Contact Icons in Header */
         .header-icons a {
