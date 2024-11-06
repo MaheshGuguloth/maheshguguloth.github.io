@@ -17,48 +17,32 @@
             padding: 0;
         }
 
-                /* Header Section Styling */
+              /* Header Section */
         #header {
             display: flex;
+            justify-content: space-between;
             align-items: center;
             padding: 20px;
-            background-color: #3b5998; /* Background color for header */
-            color: #fff;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
+            border-bottom: none; /* Removes bottom border */
         }
-        
-        /* Logo Styling (Aligned to the Left) */
         #header .logo {
             font-size: 1.8em;
-            color: #ffcb05;
             text-decoration: none;
         }
-        
-        /* Aligns Menu and Icons to the Right */
         #header .menu {
             display: flex;
             gap: 20px;
             align-items: center;
-            margin-left: auto; /* Pushes items to the right */
         }
-        
         #header .menu a {
             color: #fff;
             text-decoration: none;
             font-weight: bold;
-            padding: 5px 10px;
-            transition: color 0.3s ease;
+            transition: color 0.3s;
         }
-        
-        /* Hover Effect for Menu Links */
         #header .menu a:hover {
             color: #ffcb05;
         }
-
-
         /* Contact Icons in Header */
         .header-icons a {
             color: #ffcb05;
