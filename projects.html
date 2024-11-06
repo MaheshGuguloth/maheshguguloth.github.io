@@ -17,17 +17,18 @@
             padding: 0;
         }
 
-              /* Header Section */
+        /* Header Section */
         #header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 20px;
-            border-bottom: none; /* Removes bottom border */
+            border-bottom: none;
         }
         #header .logo {
             font-size: 1.8em;
             text-decoration: none;
+            color: #fff;
         }
         #header .menu {
             display: flex;
@@ -43,6 +44,7 @@
         #header .menu a:hover {
             color: #ffcb05;
         }
+
         /* Contact Icons in Header */
         .header-icons a {
             color: #ffcb05;
@@ -57,54 +59,21 @@
         /* Main Section Layout */
         #main {
             display: flex;
+            flex-direction: column;
             align-items: center;
             max-width: 1000px;
             margin: 0 auto;
             padding: 40px 20px;
         }
-        
-        /* Profile Picture Styling */
-        .profile-pic img {
-            width: 350px;
-            height: 400px;
-            margin-right: 40px;
-        }
-
-        /* Intro Text Styling */
-        
-        .intro h1 {
-            font-size: 2.5em;
-            font-weight: bold;
-            color: #ffcb05;
-        }
-        .intro p {
-            font-size: 1.2em;
-            line-height: 1.6;
-            text-align: justify;
-        }
-
-        /* Vibrant Footer Section */
-        footer {
-            position: relative;
-            bottom: 10px;
-            right: 10px;
-            font-size: 0.8em;
-            color: #ffcb05;
-            text-align: right;
-        }
-        footer p {
-            margin: 0;
-        }
 
         /* Project Section Styling */
         .project {
+            width: 100%;
             padding: 20px;
             background-color: #f7f7f7;
             border-radius: 8px;
             margin-bottom: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            line-height: 1.8;
-            font-size: 1.1em;
             color: #555;
         }
         .project h2 {
@@ -120,12 +89,30 @@
             margin-top: 10px;
             color: #666;
         }
+        .project img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #333;
+            color: #ffcb05;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.8em;
+        }
     </style>
 </head>
 <body>
 
     <!-- Header Section -->
-     <header id="header">
+    <header id="header">
         <a href="index.html" class="logo">Mahesh Naik Guguloth</a>
         <nav class="menu">
             <a href="about.html">About</a>
@@ -144,57 +131,54 @@
         </nav>
     </header>
 
-
     <!-- Main Content Section -->
     <div id="main">
-             <!-- Project 1 -->
-            <div class="project">
-                <h2>NYC Yellow Taxi Data Analytics Pipeline</h2>
-                <span class="image main"><img src="images/taxi_project.jpg" alt="NYC Yellow Taxi Project" style="width: 100%; height: auto; border-radius: 5px;" /></span>
-                <p>Developed an end-to-end data pipeline to process NYC Yellow Taxi trip data, transforming raw data into a format suitable for visualization in Looker Studio.</p>
-                <ul>
-                    <li><strong>Technologies Used:</strong> AWS S3, EC2, Redshift, Python, Looker Studio</li>
-                    <li><strong>Highlights:</strong> Enabled stakeholders to analyze trip data by pickup and drop-off zones with interactive maps.</li>
-                    <li><strong>Role:</strong> Designed ETL workflows, managed data cleaning, and created interactive visualizations.</li>
-                </ul>
-            </div>
+        <!-- Project 1 -->
+        <div class="project">
+            <h2>NYC Yellow Taxi Data Analytics Pipeline</h2>
+            <span class="image main"><img src="images/taxi_project.jpg" alt="NYC Yellow Taxi Project" /></span>
+            <p>Developed an end-to-end data pipeline to process NYC Yellow Taxi trip data, transforming raw data into a format suitable for visualization in Looker Studio.</p>
+            <ul>
+                <li><strong>Technologies Used:</strong> AWS S3, EC2, Redshift, Python, Looker Studio</li>
+                <li><strong>Highlights:</strong> Enabled stakeholders to analyze trip data by pickup and drop-off zones with interactive maps.</li>
+                <li><strong>Role:</strong> Designed ETL workflows, managed data cleaning, and created interactive visualizations.</li>
+            </ul>
+        </div>
 
-            <!-- Divider -->
-            <hr class="major" />
+        <!-- Divider -->
+        <hr class="major" />
 
-            <!-- Project 2 -->
-            <div class="project">
-                <h2>Real-Time Financial Data Processing System</h2>
-                <span class="image main"><img src="images/finance_project.jpg" alt="Financial Data Processing" style="width: 100%; height: auto; border-radius: 5px;" /></span>
-                <p>Implemented a real-time data processing system for financial data, ensuring rapid ingestion and transformation for real-time insights.</p>
-                <ul>
-                    <li><strong>Technologies Used:</strong> AWS Glue, Kinesis, Snowflake, Python, SQL</li>
-                    <li><strong>Highlights:</strong> Reduced data processing time by 50% and improved data accuracy for financial reporting.</li>
-                    <li><strong>Role:</strong> Designed the data pipeline, optimized query performance, and secured data access.</li>
-                </ul>
-            </div>
+        <!-- Project 2 -->
+        <div class="project">
+            <h2>Real-Time Financial Data Processing System</h2>
+            <span class="image main"><img src="images/finance_project.jpg" alt="Financial Data Processing" /></span>
+            <p>Implemented a real-time data processing system for financial data, ensuring rapid ingestion and transformation for real-time insights.</p>
+            <ul>
+                <li><strong>Technologies Used:</strong> AWS Glue, Kinesis, Snowflake, Python, SQL</li>
+                <li><strong>Highlights:</strong> Reduced data processing time by 50% and improved data accuracy for financial reporting.</li>
+                <li><strong>Role:</strong> Designed the data pipeline, optimized query performance, and secured data access.</li>
+            </ul>
+        </div>
 
-            <!-- Divider -->
-            <hr class="major" />
+        <!-- Divider -->
+        <hr class="major" />
 
-            <!-- Project 3 -->
-            <div class="project">
-                <h2>E-commerce Sales Dashboard</h2>
-                <span class="image main"><img src="images/ecommerce_project.jpg" alt="E-commerce Sales Dashboard" style="width: 100%; height: auto; border-radius: 5px;" /></span>
-                <p>Created a comprehensive sales dashboard for an e-commerce platform, providing real-time insights into sales, inventory, and customer behavior.</p>
-                <ul>
-                    <li><strong>Technologies Used:</strong> AWS Redshift, Python, Power BI, SQL</li>
-                    <li><strong>Highlights:</strong> Enhanced decision-making capabilities by visualizing sales patterns and customer trends.</li>
-                    <li><strong>Role:</strong> Developed ETL workflows, integrated data from multiple sources, and built interactive visualizations.</li>
-                </ul>
-            </div>
+        <!-- Project 3 -->
+        <div class="project">
+            <h2>E-commerce Sales Dashboard</h2>
+            <span class="image main"><img src="images/ecommerce_project.jpg" alt="E-commerce Sales Dashboard" /></span>
+            <p>Created a comprehensive sales dashboard for an e-commerce platform, providing real-time insights into sales, inventory, and customer behavior.</p>
+            <ul>
+                <li><strong>Technologies Used:</strong> AWS Redshift, Python, Power BI, SQL</li>
+                <li><strong>Highlights:</strong> Enhanced decision-making capabilities by visualizing sales patterns and customer trends.</li>
+                <li><strong>Role:</strong> Developed ETL workflows, integrated data from multiple sources, and built interactive visualizations.</li>
+            </ul>
+        </div>
     </div>
 
     <!-- Footer Section -->
-     <!-- Footer Section with Icons -->
     <footer>
         <p>&copy; 2024 Mahesh Naik Guguloth. All Rights Reserved.</p>
-        
     </footer>
 
 </body>
