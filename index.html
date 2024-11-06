@@ -5,13 +5,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnH/PrY+PLT3rXzIs4ozqtdQFzYgL0O9cwFyJWgRYoGr4uaKQ04KgY07FhrSjeicNLvVd1eHg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style>
         /* Basic Styling */
         body {
             font-family: Arial, sans-serif;
             color: #fff;
-            background-color: #3b5998; /* Change to preferred background color */
+            background-color: #3b5998; /* Background color */
             margin: 0;
             padding: 0;
         }
@@ -26,7 +27,7 @@
         }
         #header .logo {
             font-size: 1.8em;
-            color: #ffcb05; /* Highlighted color for name */
+            color: #ffcb05;
             text-decoration: none;
         }
         #header .menu {
@@ -75,15 +76,28 @@
             line-height: 1.6;
         }
 
-        /* Footer Styling */
+        /* Vibrant Footer Section */
         footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #333;
-            color: #fff;
-            height: 20px;
-            font-size: 0.9em;
-            line-height: 1.4;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            font-size: 0.8em;
+            color: #ffcb05;
+            text-align: right;
+        }
+        footer p {
+            margin: 0;
+        }
+
+        /* Icon Styling */
+        .contact-icons a {
+            color: #ffcb05;
+            margin-left: 10px;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+        .contact-icons a:hover {
+            color: #ff6347; /* Vibrant color for hover effect */
         }
     </style>
 </head>
@@ -98,7 +112,6 @@
             <a href="projects.html">Projects</a>
             <a href="skills.html">Technical Skills</a>
             <a href="certifications.html">Certifications</a>
-            <a href="https://www.linkedin.com/in/mahesh-g-072670321/" target="_blank">LinkedIn</a>
         </nav>
     </header>
 
@@ -118,10 +131,15 @@
         </div>
     </div>
 
-    <!-- Footer Section -->
+    <!-- Footer Section with Icons -->
     <footer>
         <p>&copy; 2024 Mahesh Naik Guguloth. All Rights Reserved.</p>
-        <p>Dedicated to empowering businesses with efficient data engineering solutions.</p>
+        <div class="contact-icons">
+            <a href="https://www.linkedin.com/in/mahesh-g-072670321/" target="_blank" class="fab fa-linkedin" title="LinkedIn"></a>
+            <a href="tel:+18383330428" class="fas fa-phone" title="Call"></a>
+            <a href="mailto:maheshn.guguloth@gmail.com" class="fas fa-envelope" title="Email"></a>
+            <a href="https://github.com/yourusername" target="_blank" class="fab fa-github" title="GitHub"></a>
+        </div>
     </footer>
 
 </body>
