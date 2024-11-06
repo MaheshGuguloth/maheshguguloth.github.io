@@ -87,52 +87,64 @@
 
         /* Footer Section */
         footer {
-            padding: 10px 20px;
             font-size: 0.8em;
             color: #ffcb05;
-            text-align: right;
+            text-align: center;
+            padding: 10px 0;
         }
-        footer p {
-            margin: 0;
-        }
-
         /* Responsive Design */
-        @media (max-width: 768px) {
-            #main {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-            }
-            .profile-pic img {
-                width: 70%;
-                margin-right: 0;
-                margin-bottom: 20px;
-            }
-            .intro h1 {
-                font-size: 2em;
-            }
-            .intro p {
-                font-size: 1em;
-                padding: 0 10px;
-            }
-            #header .menu {
-                flex-direction: column;
-                gap: 10px;
-            }
-        }
+        /* Responsive Styling */
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column;
+        align-items: center;
+    }
+    #header .logo {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+    #header .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+    #header .header-icons {
+        margin-top: 10px;
+    }
+    #main {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+    .profile-pic img {
+        width: 70%;
+        margin-bottom: 20px;
+    }
+    .intro h1 {
+        font-size: 2em;
+    }
+    .intro p {
+        font-size: 1em;
+        padding: 0 10px;
+    }
+}
 
-        @media (max-width: 480px) {
-            .intro h1 {
-                font-size: 1.8em;
-            }
-            .intro p {
-                font-size: 0.9em;
-            }
-            .header-icons a {
-                font-size: 1em;
-                margin: 0 5px;
-            }
-        }
+@media (max-width: 480px) {
+    .header-icons a {
+        font-size: 1em;
+        margin: 0 5px;
+    }
+    .intro h1 {
+        font-size: 1.8em;
+    }
+    .intro p {
+        font-size: 0.9em;
+    }
+    footer {
+        font-size: 0.7em;
+    }
+}
+
     </style>
 </head>
 <body>
