@@ -1,14 +1,100 @@
 <!DOCTYPE HTML>
-<!--
-    Technical Skills - Mahesh Naik Guguloth
--->
 <html>
-    <head>
-        <title>Technical Skills - Mahesh Naik Guguloth</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="assets/css/main.css" />
-        <style>
+<head>
+    <title>Mahesh Naik Guguloth</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnH/PrY+PLT3rXzIs4ozqtdQFzYgL0O9cwFyJWgRYoGr4uaKQ04KgY07FhrSjeicNLvVd1eHg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        /* Basic Styling */
+        body {
+            font-family: Arial, sans-serif;
+            color: #fff;
+            background-color: #3b5998;
+            margin: 0;
+            padding: 0;
+        }
+
+              /* Header Section */
+        #header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            border-bottom: none; /* Removes bottom border */
+        }
+        #header .logo {
+            font-size: 1.8em;
+            text-decoration: none;
+        }
+        #header .menu {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        #header .menu a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        #header .menu a:hover {
+            color: #ffcb05;
+        }
+        /* Contact Icons in Header */
+        .header-icons a {
+            color: #ffcb05;
+            margin-left: 10px;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+        .header-icons a:hover {
+            color: #ff6347;
+        }
+
+        /* Main Section Layout */
+        #main {
+            display: flex;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        /* Profile Picture Styling */
+        .profile-pic img {
+            width: 350px;
+            height: 400px;
+            margin-right: 40px;
+        }
+
+        /* Intro Text Styling */
+        
+        .intro h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #ffcb05;
+        }
+        .intro p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        /* Vibrant Footer Section */
+        footer {
+            position: relative;
+            bottom: 10px;
+            right: 10px;
+            font-size: 0.8em;
+            color: #ffcb05;
+            text-align: right;
+        }
+        footer p {
+            margin: 0;
+        }
             .skills-section {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
@@ -47,19 +133,28 @@
                     <div id="main">
                         <div class="inner">
 
-                            <!-- Header -->
-                                <header id="header">
-                                    <a href="index.html" class="logo"><strong>Data Engineering</strong> by Mahesh</a>
-                                    <ul class="icons">
-                                        <li><a href="https://www.linkedin.com/in/mahesh-g-072670321/?trk=opento_sprofile_topcard" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
-                                    </ul>
-                                </header>
+                                            <!-- Header Section -->
+                    <header id="header">
+                        <a href="index.html" class="logo">Mahesh Naik Guguloth</a>
+                        <nav class="menu">
+                            <a href="about.html">About</a>
+                            <a href="experience.html">Experience</a>
+                            <a href="projects.html">Projects</a>
+                            <a href="skills.html">Technical Skills</a>
+                            <a href="certifications.html">Certifications</a>
+                            
+                            <!-- Contact Icons in Header -->
+                            <div class="header-icons">
+                                <a href="https://www.linkedin.com/in/mahesh-g-072670321/" target="_blank" class="fab fa-linkedin" title="LinkedIn"></a>
+                                <a href="tel:+18383330428" class="fas fa-phone" title="Call"></a>
+                                <a href="mailto:maheshn.guguloth@gmail.com" class="fas fa-envelope" title="Email"></a>
+                                <a href="https://github.com/yourusername" target="_blank" class="fab fa-github" title="GitHub"></a>
+                            </div>
+                        </nav>
+                    </header>
 
-                            <!-- Content -->
-                                <section id="skills">
-                                    <header class="main">
-                                        <h1>Technical Skills</h1>
-                                    </header>
+
+                        
 
                                     <!-- Skills Grid -->
                                     <div class="skills-section">
@@ -156,69 +251,13 @@
                                             </ul>
                                         </div>
                                     </div>
-                                </section>
+                               
 
-                            <!-- Footer -->
-                                <footer style="background-color: #333; color: #fff; padding: 5px 20px; text-align: center; line-height: 1.4;">
-                                    <p>&copy; 2024 Mahesh Naik Guguloth. All Rights Reserved.</p>
-                                    <p>Dedicated to empowering businesses with efficient data engineering solutions.</p>
-                                </footer>
+                              <!-- Footer Section with Icons -->
+    <footer>
+        <p>&copy; 2024 Mahesh Naik Guguloth. All Rights Reserved.</p>
+        
+    </footer>
 
-                        </div>
-                    </div>
-
-                <!-- Sidebar -->
-                    <div id="sidebar">
-                        <div class="inner">
-
-                            <!-- Menu -->
-                                <nav id="menu">
-                                    <header class="major">
-                                        <h2>Menu</h2>
-                                    </header>
-                                    <ul>
-                                        <li><a href="index.html">Homepage</a></li>
-                                        <li><a href="about.html">My Story</a></li>
-                                        <li><a href="experience.html">Experience</a></li>
-                                        <li><a href="projects.html">Projects</a></li>
-                                        <li><a href="skills.html">Technical Skills</a></li>
-                                        <li><a href="certifications.html">Certifications</a></li>
-                                        
-                                        <li>
-                                            <span class="opener">Portfolio Submenu</span>
-                                            <ul>
-                                                <li><a href="data-visualization.html">Data Visualization</a></li>
-                                                <li><a href="etl-processes.html">ETL Processes</a></li>
-                                                <li><a href="cloud-computing.html">Cloud Computing</a></li>
-                                                <li><a href="machine-learning.html">Machine Learning</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </nav>
-
-                            <!-- Get in Touch Section -->
-                                <section>
-                                    <header class="major">
-                                        <h2>Get in Touch</h2>
-                                    </header>
-                                    <ul class="contact">
-                                        <li class="icon solid fa-envelope"><a href="mailto:maheshn.guguloth@gmail.com">maheshn.guguloth@gmail.com</a></li>
-                                        <li class="icon solid fa-phone">(838) 333 0428</li>
-                                        <li class="icon solid fa-home">723 State St Apt 1, Albany, NY 12203</li>
-                                    </ul>
-                                </section>
-
-                        </div>
-                    </div>
-
-            </div>
-
-        <!-- Scripts -->
-            <script src="assets/js/jquery.min.js"></script>
-            <script src="assets/js/browser.min.js"></script>
-            <script src="assets/js/breakpoints.min.js"></script>
-            <script src="assets/js/util.js"></script>
-            <script src="assets/js/main.js"></script>
-
-    </body>
+</body>
 </html>
