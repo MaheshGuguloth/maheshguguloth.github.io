@@ -17,17 +17,18 @@
             padding: 0;
         }
 
-              /* Header Section */
+        /* Header Section */
         #header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 20px;
-            border-bottom: none; /* Removes bottom border */
+            border-bottom: none;
         }
         #header .logo {
             font-size: 1.8em;
             text-decoration: none;
+            color: #fff;
         }
         #header .menu {
             display: flex;
@@ -43,6 +44,7 @@
         #header .menu a:hover {
             color: #ffcb05;
         }
+
         /* Contact Icons in Header */
         .header-icons a {
             color: #ffcb05;
@@ -56,138 +58,105 @@
 
         /* Main Section Layout */
         #main {
-            display: flex;
-            align-items: center;
             max-width: 1000px;
             margin: 0 auto;
             padding: 40px 20px;
         }
         
-        /* Profile Picture Styling */
-        .profile-pic img {
-            width: 350px;
-            height: 400px;
-            margin-right: 40px;
+        /* Job Section Styling */
+        .job {
+            padding: 20px;
+            background-color: #f7f7f7;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            line-height: 1.8;
+            font-size: 1.1em;
+            color: #555;
+        }
+        .job h2 {
+            font-size: 1.6em;
+            color: #333;
+        }
+        .job p {
+            margin: 10px 0;
+            color: #666;
         }
 
-        /* Intro Text Styling */
-        
-        .intro h1 {
-            font-size: 2.5em;
-            font-weight: bold;
-            color: #ffcb05;
-        }
-        .intro p {
-            font-size: 1.2em;
-            line-height: 1.6;
-            text-align: justify;
-        }
-
-        /* Vibrant Footer Section */
+        /* Footer Styling */
         footer {
-            position: relative;
-            bottom: 10px;
-            right: 10px;
             font-size: 0.8em;
             color: #ffcb05;
-            text-align: right;
+            text-align: center;
+            padding: 10px 0;
         }
-        footer p {
-            margin: 0;
-        }
-            .job {
-                padding: 20px;
-                background-color: #f7f7f7;
-                border-radius: 8px;
-                margin-bottom: 20px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                line-height: 1.8;
-                font-size: 1.1em;
-                color: #555;
-            }
-            .job h2 {
-                font-size: 1.6em;
-                color: #333;
-            }
-            .job p {
-                margin: 10px 0;
-                color: #666;
-            }
-        </style>
-    </head>
-    <body class="is-preload">
+    </style>
+</head>
+<body>
 
-        <!-- Wrapper -->
-            <div id="wrapper">
+    <!-- Header Section -->
+    <header id="header">
+        <a href="index.html" class="logo">Mahesh Naik Guguloth</a>
+        <nav class="menu">
+            <a href="about.html">About</a>
+            <a href="experience.html">Experience</a>
+            <a href="projects.html">Projects</a>
+            <a href="skills.html">Technical Skills</a>
+            <a href="certifications.html">Certifications</a>
+            
+            <!-- Contact Icons in Header -->
+            <div class="header-icons">
+                <a href="https://www.linkedin.com/in/mahesh-g-072670321/" target="_blank" class="fab fa-linkedin" title="LinkedIn"></a>
+                <a href="tel:+18383330428" class="fas fa-phone" title="Call"></a>
+                <a href="mailto:maheshn.guguloth@gmail.com" class="fas fa-envelope" title="Email"></a>
+                <a href="https://github.com/yourusername" target="_blank" class="fab fa-github" title="GitHub"></a>
+            </div>
+        </nav>
+    </header>
 
-                <!-- Main -->
-                    <div id="main">
-                        <div class="inner">
+    <!-- Main Content Section -->
+    <div id="main">
+        <!-- Job Position 1 -->
+        <div class="job">
+            <h2>Data Engineer - MTX Group</h2>
+            <p><strong>Location:</strong> Albany, New York | <strong>Duration:</strong> Feb 2024 - Present</p>
+            <p>As a Data Engineer at MTX Group, I developed innovative solutions that enabled teams across the organization to access and analyze large datasets for both real-time and batch processing. This role allowed me to blend my expertise in AWS and open-source technologies, crafting architectures that balanced performance and cost-efficiency. I took pride in enhancing the accessibility of analytics by automating ETL workflows with Python and AWS, reducing processing times and eliminating manual tasks. Additionally, I established a framework of data integrity through role-based access, encryption, and robust monitoring practices, creating a secure foundation for data-driven insights. My experience here has been transformative, as I integrated CI/CD best practices to maintain high-quality, streamlined deployments across our pipelines.</p>
+        </div>
 
-                            <!-- Header -->
-                                    <!-- Header Section -->
-                                <header id="header">
-                                    <a href="index.html" class="logo">Mahesh Naik Guguloth</a>
-                                    <nav class="menu">
-                                        <a href="about.html">About</a>
-                                        <a href="experience.html">Experience</a>
-                                        <a href="projects.html">Projects</a>
-                                        <a href="skills.html">Technical Skills</a>
-                                        <a href="certifications.html">Certifications</a>
-                                        
-                                        <!-- Contact Icons in Header -->
-                                        <div class="header-icons">
-                                            <a href="https://www.linkedin.com/in/mahesh-g-072670321/" target="_blank" class="fab fa-linkedin" title="LinkedIn"></a>
-                                            <a href="tel:+18383330428" class="fas fa-phone" title="Call"></a>
-                                            <a href="mailto:maheshn.guguloth@gmail.com" class="fas fa-envelope" title="Email"></a>
-                                            <a href="https://github.com/yourusername" target="_blank" class="fab fa-github" title="GitHub"></a>
-                                        </div>
-                                    </nav>
-                                </header>
+        <!-- Divider -->
+        <hr class="major" />
 
-                            <!-- Content -->
-                            
+        <!-- Job Position 2 -->
+        <div class="job">
+            <h2>Associate Data Engineer - Logic Square Private Limited</h2>
+            <p><strong>Location:</strong> Pune, India | <strong>Duration:</strong> Aug 2019 - Jun 2022</p>
+            <p>During my tenure at Logic Square, I honed my skills in building resilient, scalable data solutions tailored to complex requirements. My work focused on automating ETL processes using AWS services like Glue, Kinesis, and Lambda to support real-time data transformations. This experience helped me drive significant efficiency gains, with processing times reduced and data retrieval made faster. I also embraced a security-first approach, implementing IAM roles and integrating metadata with Glue Data Catalog to create a secure and user-friendly data architecture. Working with external APIs and Redshift analytics, I was able to generate insights that empowered decision-making. These experiences laid the groundwork for a deeper understanding of AWS technologies and how to maximize their potential in real-world applications.</p>
+        </div>
 
-                                    <!-- Job Position 1 -->
-                                    <div class="job">
-                                        <h2>Data Engineer - MTX Group</h2>
-                                        <p><strong>Location:</strong> Albany, New York | <strong>Duration:</strong> Feb 2024 - Present</p>
-                                        <p>As a Data Engineer at MTX Group, I developed innovative solutions that enabled teams across the organization to access and analyze large datasets for both real-time and batch processing. This role allowed me to blend my expertise in AWS and open-source technologies, crafting architectures that balanced performance and cost-efficiency. I took pride in enhancing the accessibility of analytics by automating ETL workflows with Python and AWS, reducing processing times and eliminating manual tasks. Additionally, I established a framework of data integrity through role-based access, encryption, and robust monitoring practices, creating a secure foundation for data-driven insights. My experience here has been transformative, as I integrated CI/CD best practices to maintain high-quality, streamlined deployments across our pipelines.</p>
-                                    </div>
+        <!-- Divider -->
+        <hr class="major" />
 
-                                    <hr class="major" />
+        <!-- Leadership Experience -->
+        <div class="job">
+            <h2>Leadership Experience</h2>
+            <p>My time leading the National Social Service team remains one of my most valued experiences. As Team Lead, I organized and managed a variety of community service projects, each aimed at making a meaningful impact on local communities. From health awareness initiatives to educational outreach, each project was an opportunity to work closely with dedicated team members toward a shared goal. I also volunteered with Bachpan Prayas NGO, where I contributed to organizing medical camps to promote health awareness and offer essential services to those in need. These leadership roles enriched my understanding of project management, team coordination, and the value of community-focused work.</p>
+        </div>
 
-                                    <!-- Job Position 2 -->
-                                    <div class="job">
-                                        <h2>Associate Data Engineer - Logic Square Private Limited</h2>
-                                        <p><strong>Location:</strong> Pune, India | <strong>Duration:</strong> Aug 2019 - Jun 2022</p>
-                                        <p>During my tenure at Logic Square, I honed my skills in building resilient, scalable data solutions tailored to complex requirements. My work focused on automating ETL processes using AWS services like Glue, Kinesis, and Lambda to support real-time data transformations. This experience helped me drive significant efficiency gains, with processing times reduced and data retrieval made faster. I also embraced a security-first approach, implementing IAM roles and integrating metadata with Glue Data Catalog to create a secure and user-friendly data architecture. Working with external APIs and Redshift analytics, I was able to generate insights that empowered decision-making. These experiences laid the groundwork for a deeper understanding of AWS technologies and how to maximize their potential in real-world applications.</p>
-                                    </div>
+        <!-- Divider -->
+        <hr class="major" />
 
-                                    <hr class="major" />
+        <!-- Academic Experience -->
+        <div class="job">
+            <h2>Academic Experience - Grader for Machine Learning Practicum</h2>
+            <p><strong>Institution:</strong> State University of New York | <strong>Duration:</strong> Aug 2023 - Dec 2023</p>
+            <p>As a Grader for the Machine Learning Practicum, I had the rewarding task of assisting students as they navigated complex machine learning concepts. My role involved evaluating assignments and projects, ensuring consistency and accuracy in grading. I provided constructive feedback that guided students toward a stronger grasp of technical skills, and I enjoyed offering support on technical queries. This experience not only deepened my knowledge in machine learning but also reinforced my ability to communicate complex ideas in a straightforward way, an invaluable skill in any collaborative environment.</p>
+        </div>
+    </div>
 
-                                    <!-- Leadership Experience -->
-                                    <div class="job">
-                                        <h2>Leadership Experience</h2>
-                                        <p>My time leading the National Social Service team remains one of my most valued experiences. As Team Lead, I organized and managed a variety of community service projects, each aimed at making a meaningful impact on local communities. From health awareness initiatives to educational outreach, each project was an opportunity to work closely with dedicated team members toward a shared goal. I also volunteered with Bachpan Prayas NGO, where I contributed to organizing medical camps to promote health awareness and offer essential services to those in need. These leadership roles enriched my understanding of project management, team coordination, and the value of community-focused work.</p>
-                                    </div>
-
-                                    <hr class="major" />
-
-                                    <!-- Academic Experience -->
-                                    <div class="job">
-                                        <h2>Academic Experience - Grader for Machine Learning Practicum</h2>
-                                        <p><strong>Institution:</strong> State University of New York | <strong>Duration:</strong> Aug 2023 - Dec 2023</p>
-                                        <p>As a Grader for the Machine Learning Practicum, I had the rewarding task of assisting students as they navigated complex machine learning concepts. My role involved evaluating assignments and projects, ensuring consistency and accuracy in grading. I provided constructive feedback that guided students toward a stronger grasp of technical skills, and I enjoyed offering support on technical queries. This experience not only deepened my knowledge in machine learning but also reinforced my ability to communicate complex ideas in a straightforward way, an invaluable skill in any collaborative environment.</p>
-                                    </div>
-                                <!-- Footer Section with Icons -->
+    <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 Mahesh Naik Guguloth. All Rights Reserved.</p>
-        
     </footer>
 
 </body>
 </html>
-
-                            <!-- Footer -->
-                                
