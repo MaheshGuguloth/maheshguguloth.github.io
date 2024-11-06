@@ -17,17 +17,17 @@
             padding: 0;
         }
 
-              /* Header Section */
+        /* Header Section */
         #header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 20px;
-            border-bottom: none; /* Removes bottom border */
         }
         #header .logo {
             font-size: 1.8em;
             text-decoration: none;
+            color: #fff;
         }
         #header .menu {
             display: flex;
@@ -43,6 +43,7 @@
         #header .menu a:hover {
             color: #ffcb05;
         }
+
         /* Contact Icons in Header */
         .header-icons a {
             color: #ffcb05;
@@ -57,21 +58,22 @@
         /* Main Section Layout */
         #main {
             display: flex;
+            flex-direction: row;
             align-items: center;
             max-width: 1000px;
             margin: 0 auto;
             padding: 40px 20px;
         }
-        
+
         /* Profile Picture Styling */
         .profile-pic img {
             width: 320px;
-            height: 420px;
+            height: auto;
             margin-right: 40px;
+            border-radius: 8px;
         }
 
         /* Intro Text Styling */
-        
         .intro h1 {
             font-size: 2.5em;
             font-weight: bold;
@@ -83,11 +85,9 @@
             text-align: justify;
         }
 
-        /* Vibrant Footer Section */
+        /* Footer Section */
         footer {
-            position: relative;
-            bottom: 10px;
-            right: 10px;
+            padding: 10px 20px;
             font-size: 0.8em;
             color: #ffcb05;
             text-align: right;
@@ -96,15 +96,42 @@
             margin: 0;
         }
 
-        /* Footer Icon Styling */
-        .contact-icons a {
-            color: #ffcb05;
-            margin-left: 10px;
-            font-size: 1.2em;
-            transition: color 0.3s;
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            #main {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .profile-pic img {
+                width: 70%;
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+            .intro h1 {
+                font-size: 2em;
+            }
+            .intro p {
+                font-size: 1em;
+                padding: 0 10px;
+            }
+            #header .menu {
+                flex-direction: column;
+                gap: 10px;
+            }
         }
-        .contact-icons a:hover {
-            color: #ff6347;
+
+        @media (max-width: 480px) {
+            .intro h1 {
+                font-size: 1.8em;
+            }
+            .intro p {
+                font-size: 0.9em;
+            }
+            .header-icons a {
+                font-size: 1em;
+                margin: 0 5px;
+            }
         }
     </style>
 </head>
@@ -146,10 +173,9 @@
         </div>
     </div>
 
-    <!-- Footer Section with Icons -->
+    <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 Mahesh Naik Guguloth. All Rights Reserved.</p>
-        
     </footer>
 
 </body>
