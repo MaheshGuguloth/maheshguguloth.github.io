@@ -1,7 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-    Editorial by HTML5 UP
--->
 <html>
     <head>
         <title>Mahesh Naik Guguloth</title>
@@ -9,25 +6,74 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <link rel="stylesheet" href="assets/css/main.css" />
 
-        <!-- Additional styling to align the header menu -->
+        <!-- Add Styling for Colorful Menu with Dropdown -->
         <style>
-            /* Align the menu items in the header */
-            #header .menu {
+            /* Header and Navigation Styling */
+            #header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px;
+                background-color: #333;
+                color: #fff;
+            }
+            #header .logo {
+                font-size: 1.5em;
+                color: #ffcb05; /* Yellow color for a vibrant look */
+                text-decoration: none;
+            }
+            .menu {
                 display: flex;
                 gap: 20px;
-                align-items: center;
             }
-            #header .menu a {
+            .menu li {
+                list-style: none;
+                position: relative;
+            }
+            .menu a {
                 text-decoration: none;
-                color: #333;
+                color: #fff;
                 font-weight: bold;
+                padding: 5px 10px;
+                transition: color 0.3s;
             }
+            .menu a:hover {
+                color: #ffcb05; /* Yellow hover color */
+            }
+
+            /* Dropdown Menu Styling */
+            .submenu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background-color: #444;
+                border-radius: 4px;
+                padding: 10px 0;
+                z-index: 1;
+            }
+            .submenu li {
+                padding: 5px 20px;
+            }
+            .submenu a {
+                color: #ffcb05; /* Yellow for submenu items */
+                display: block;
+            }
+            .submenu a:hover {
+                color: #fff;
+                background-color: #666;
+            }
+
+            /* Show submenu on hover */
+            .menu li:hover .submenu {
+                display: block;
+            }
+
             /* Responsive styling for smaller screens */
             @media (max-width: 768px) {
-                #header .menu {
-                    display: block;
-                    text-align: center;
-                    margin-top: 10px;
+                .menu {
+                    flex-direction: column;
+                    gap: 10px;
                 }
             }
         </style>
@@ -51,11 +97,19 @@
                             <li><a href="projects.html">Projects</a></li>
                             <li><a href="skills.html">Technical Skills</a></li>
                             <li><a href="certifications.html">Certifications</a></li>
-                            <li><a href="data-visualization.html">Data Visualization</a></li>
-                            <li><a href="etl-processes.html">ETL Processes</a></li>
-                            <li><a href="cloud-computing.html">Cloud Computing</a></li>
-                            <li><a href="machine-learning.html">Machine Learning</a></li>
-                            <li><a href="https://www.linkedin.com/in/mahesh-g-072670321/?trk=opento_sprofile_topcard" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+                            <!-- Dropdown menu for Portfolio -->
+                            <li>
+                                <a href="#">Portfolio</a>
+                                <ul class="submenu">
+                                    <li><a href="data-visualization.html">Data Visualization</a></li>
+                                    <li><a href="etl-processes.html">ETL Processes</a></li>
+                                    <li><a href="cloud-computing.html">Cloud Computing</a></li>
+                                    <li><a href="machine-learning.html">Machine Learning</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/mahesh-g-072670321/?trk=opento_sprofile_topcard" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a>
+                            </li>
                         </ul>
                     </header>
 
@@ -94,3 +148,4 @@
 
     </body>
 </html>
+
