@@ -1,10 +1,7 @@
 <!DOCTYPE HTML>
-<!--
-    Projects - Mahesh Naik Guguloth
--->
 <html>
 <head>
-    <title>Projects - Mahesh Naik Guguloth</title>
+    <title>Mahesh Naik Guguloth</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -20,34 +17,83 @@
             padding: 0;
         }
 
-        /* Header Section */
+              /* Header Section */
         #header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 20px;
-            border-bottom: none;
+            border-bottom: none; /* Removes bottom border */
         }
         #header .logo {
             font-size: 1.8em;
             text-decoration: none;
-            color: #fff;
         }
-        #header .icons a {
+        #header .menu {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        #header .menu a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        #header .menu a:hover {
+            color: #ffcb05;
+        }
+        /* Contact Icons in Header */
+        .header-icons a {
             color: #ffcb05;
             margin-left: 10px;
             font-size: 1.2em;
             transition: color 0.3s;
         }
-        #header .icons a:hover {
+        .header-icons a:hover {
             color: #ff6347;
         }
 
         /* Main Section Layout */
         #main {
+            display: flex;
+            align-items: center;
             max-width: 1000px;
             margin: 0 auto;
             padding: 40px 20px;
+        }
+        
+        /* Profile Picture Styling */
+        .profile-pic img {
+            width: 350px;
+            height: 400px;
+            margin-right: 40px;
+        }
+
+        /* Intro Text Styling */
+        
+        .intro h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #ffcb05;
+        }
+        .intro p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        /* Vibrant Footer Section */
+        footer {
+            position: relative;
+            bottom: 10px;
+            right: 10px;
+            font-size: 0.8em;
+            color: #ffcb05;
+            text-align: right;
+        }
+        footer p {
+            margin: 0;
         }
 
         /* Project Section Styling */
@@ -73,18 +119,6 @@
             padding-left: 20px;
             margin-top: 10px;
             color: #666;
-        }
-
-        /* Footer Styling */
-        footer {
-            background-color: #333;
-            color: #ffcb05;
-            padding: 10px 20px;
-            text-align: center;
-        }
-        footer p {
-            margin: 0;
-            font-size: 0.8em;
         }
     </style>
 </head>
