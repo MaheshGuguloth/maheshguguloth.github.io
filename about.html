@@ -4,30 +4,33 @@
     <title>Mahesh Naik Guguloth</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnH/PrY+PLT3rXzIs4ozqtdQFzYgL0O9cwFyJWgRYoGr4uaKQ04KgY07FhrSjeicNLvVd1eHg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style>
-        /* Basic Styling */
+        /* Styling */
         body {
             font-family: Arial, sans-serif;
             color: #fff;
-            background-color: #3b5998;
+            background: linear-gradient(135deg, #3b5998, #1d2c4d);
             margin: 0;
             padding: 0;
         }
 
-        /* Header Section */
+        /* Header */
         #header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-bottom: 2px solid #ffcb05;
         }
         #header .logo {
-            font-size: 1.8em;
+            font-size: 2em;
             text-decoration: none;
-            color: #fff;
+            color: #ffcb05;
+            font-weight: bold;
         }
         #header .menu {
             display: flex;
@@ -35,16 +38,16 @@
             align-items: center;
         }
         #header .menu a {
-            color: #fff;
+            color: #ffcb05;
             text-decoration: none;
             font-weight: bold;
             transition: color 0.3s;
         }
         #header .menu a:hover {
-            color: #ffcb05;
+            color: #ff6347;
         }
 
-        /* Contact Icons in Header */
+        /* Icons */
         .header-icons a {
             color: #ffcb05;
             margin-left: 10px;
@@ -55,28 +58,36 @@
             color: #ff6347;
         }
 
-        /* Main Section Layout */
+        /* Main Section */
         #main {
-            max-width: 1000px;
-            margin: 0 auto;
+            max-width: 800px;
+            margin: 40px auto;
             padding: 40px 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            text-align: center;
         }
         
-        /* Intro Text Styling */
+        /* Intro Styling */
         .intro h1 {
             font-size: 2.5em;
-            font-weight: bold;
             color: #ffcb05;
+            margin-bottom: 10px;
         }
         .intro p {
             font-size: 1.2em;
             line-height: 1.6;
             text-align: justify;
+            margin: 0 0 20px;
         }
 
         /* Subsection Styling */
         .subsection {
             margin-top: 20px;
+            padding: 15px;
+            border-left: 4px solid #ffcb05;
+            text-align: left;
         }
         .subsection h2 {
             color: #ffcb05;
@@ -87,9 +98,15 @@
             font-size: 1em;
             line-height: 1.6;
             text-align: justify;
+            margin: 10px 0;
+        }
+        .subsection ul {
+            list-style-type: square;
+            margin: 0;
+            padding-left: 20px;
         }
 
-        /* Download Button Styling */
+        /* Download Button */
         .download-resume {
             display: inline-block;
             padding: 12px 25px;
@@ -99,27 +116,32 @@
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .download-resume:hover {
+            background-color: #ff6347;
+            transform: scale(1.05);
         }
 
-        /* Footer Section */
+        /* Footer */
         footer {
             font-size: 0.8em;
             color: #ffcb05;
             text-align: center;
             padding: 10px 20px;
-        }
-        footer p {
-            margin: 0;
+            margin-top: 40px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-top: 2px solid #ffcb05;
         }
 
-        /* Responsive Design */
+        /* Responsive */
         @media (max-width: 768px) {
             #header {
                 flex-direction: column;
                 align-items: center;
             }
             #header .logo {
-                font-size: 1.5em;
+                font-size: 1.8em;
                 margin-bottom: 10px;
             }
             #header .menu {
@@ -159,7 +181,7 @@
 </head>
 <body>
 
-    <!-- Header Section -->
+    <!-- Header -->
     <header id="header">
         <a href="index.html" class="logo">Mahesh Naik Guguloth</a>
         <nav class="menu">
@@ -168,8 +190,6 @@
             <a href="projects.html">Projects</a>
             <a href="skills.html">Technical Skills</a>
             <a href="certifications.html">Certifications</a>
-            
-            <!-- Contact Icons in Header -->
             <div class="header-icons">
                 <a href="https://www.linkedin.com/in/mahesh-g-072670321/" target="_blank" class="fab fa-linkedin" title="LinkedIn"></a>
                 <a href="tel:+18383330428" class="fas fa-phone" title="Call"></a>
@@ -179,64 +199,49 @@
         </nav>
     </header>
 
-    <!-- Main Content Section -->
+    <!-- Main Content -->
     <div id="main">
         <div class="intro">
             <h1>About Me</h1>
-            <p>Hi, I'm Mahesh Naik Guguloth, a passionate Data Engineer with over 4 years of hands-on experience in designing, building, and optimizing scalable data solutions. My commitment to leveraging data for impactful insights drives me to create efficient ETL workflows, secure data access, and streamline data processing pipelines that enable data-informed decisions across organizations.</p>
+            <p>Hi, I'm Mahesh Naik Guguloth, a passionate Data Engineer with over 4 years of hands-on experience in designing, building, and optimizing scalable data solutions. I specialize in creating secure ETL workflows and data pipelines to enable data-informed decisions.</p>
         </div>
 
-        <!-- Professional Summary Section -->
         <div class="subsection">
             <h2>Professional Summary</h2>
-            <p>I bring extensive experience in AWS and Snowflake, where I specialize in creating high-performance solutions tailored to complex data needs. My role involves developing and optimizing ETL workflows, implementing robust data models, and ensuring data security through best practices in IAM and encryption. I thrive on crafting solutions that balance technical precision with business requirements, contributing to better data-driven outcomes for stakeholders.</p>
+            <p>I bring extensive experience in AWS and Snowflake, where I specialize in high-performance data solutions. I focus on optimizing ETL workflows and ensuring data security through IAM and encryption best practices.</p>
         </div>
 
-        <!-- Core Technical Skills Section -->
         <div class="subsection">
             <h2>Core Technical Skills</h2>
-            <p><u>Data Engineering & ETL:</u> Proficient in ETL frameworks and automation tools like AWS Glue, Kinesis, and SSIS.</p>
-            <p><u>Big Data & Cloud:</u> Expertise in Hadoop, Spark, and AWS environments, including advanced SQL and data management on Snowflake and Redshift.</p>
-            <p><u>Security & Compliance:</u> Skilled in data protection protocols using AWS IAM, encryption standards, and GDPR compliance to ensure secure, compliant data solutions.</p>
+            <p><strong>Data Engineering & ETL:</strong> Proficient in AWS Glue, Kinesis, and SSIS.</p>
+            <p><strong>Big Data & Cloud:</strong> Skilled in Hadoop, Spark, AWS, Snowflake, and Redshift.</p>
+            <p><strong>Security & Compliance:</strong> Expertise in AWS IAM, encryption standards, and GDPR compliance.</p>
         </div>
 
-        <!-- Approach to Data Engineering Section -->
         <div class="subsection">
             <h2>Approach to Data Engineering</h2>
-            <p>My approach is centered on efficiency, collaboration, and scalable solutions. I design data models to support robust analytics, optimize data pipelines for high performance, and leverage CI/CD best practices to streamline deployment. Whether optimizing queries for faster response times or integrating data from multiple sources, I am committed to delivering impactful results and enabling efficient data workflows.</p>
+            <p>My approach is centered on efficiency, collaboration, and scalable solutions. I leverage CI/CD best practices to streamline deployment and deliver impactful data workflows.</p>
         </div>
 
-        <!-- Key Achievements Section -->
         <div class="subsection">
             <h2>Key Achievements</h2>
             <ul>
-                <li>Reduced ETL processing time by 40% through workflow automation, enabling faster data availability.</li>
-                <li>Enhanced query performance by 30% with profiling tools, supporting faster analytics and reporting.</li>
-                <li>Developed real-time data transformations, reducing manual interventions and achieving a 40% time reduction.</li>
+                <li>Reduced ETL processing time by 40% through automation.</li>
+                <li>Improved query performance by 30% with profiling tools.</li>
+                <li>Developed real-time data transformations with 40% time reduction.</li>
             </ul>
         </div>
 
-        <!-- Commitment to Learning Section -->
-        <div class="subsection">
-            <h2>Commitment to Learning</h2>
-            <p>I am passionate about continuous learning and staying ahead of industry trends. Recently, I earned the SnowPro Core Certification and am constantly expanding my expertise in cloud data solutions, machine learning, and big data frameworks. This dedication ensures I bring the latest methodologies and technologies to every project I undertake.</p>
-        </div>
-
-        <!-- Education Section -->
         <div class="subsection">
             <h2>Education</h2>
-            <p><u>Master of Science in Data Science</u> - State University of New York at Albany</p>
-            <li>Advanced coursework in machine learning, big data analytics, and data engineering, with a 3.64 GPA.</li>
-            <li>Developed a strong foundation in data processing, modeling, and visualization, equipping me for real-world data engineering challenges.</li>
-            <p><u>Bachelor of Engineering in Electronics and Communication</u> - Sreenidhi Institute of Science and Technology</p>
-            <li>Built core engineering principles in data transmission, digital systems, and analytics, forming a technical foundation that seamlessly transitioned into data engineering.</li>
-            <li>Engaged in projects that honed my problem-solving skills and ability to work with large datasets.</li>
+            <p><strong>Master of Science in Data Science</strong> - State University of New York at Albany</p>
+            <p><strong>Bachelor of Engineering in Electronics and Communication</strong> - Sreenidhi Institute of Science and Technology</p>
         </div>
 
         <a href="images/Mahesh Naik Guguloth Resume.pdf" download class="download-resume">Download Resume</a>
     </div>
 
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Mahesh Naik Guguloth. All Rights Reserved.</p>
     </footer>
