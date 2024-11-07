@@ -11,7 +11,7 @@
         body {
             font-family: Arial, sans-serif;
             color: #fff;
-            background: linear-gradient(135deg, #3b5998, #1d2c4d);
+            background-color: #3b5998;
             margin: 0;
             padding: 0;
         }
@@ -23,14 +23,18 @@
             align-items: center;
             padding: 20px;
             background-color: rgba(0, 0, 0, 0.6);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             border-bottom: 2px solid #ffcb05;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         #header .logo {
             font-size: 2em;
             text-decoration: none;
             color: #ffcb05;
             font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+        #header .logo:hover {
+            color: #ff6347;
         }
         #header .menu {
             display: flex;
@@ -41,7 +45,7 @@
             color: #ffcb05;
             text-decoration: none;
             font-weight: bold;
-            transition: color 0.3s;
+            transition: color 0.3s ease-in-out;
         }
         #header .menu a:hover {
             color: #ff6347;
@@ -52,10 +56,11 @@
             color: #ffcb05;
             margin-left: 10px;
             font-size: 1.2em;
-            transition: color 0.3s;
+            transition: color 0.3s ease, transform 0.2s ease;
         }
         .header-icons a:hover {
             color: #ff6347;
+            transform: scale(1.1);
         }
 
         /* Main Section */
@@ -65,8 +70,11 @@
             padding: 40px 20px;
             background-color: rgba(255, 255, 255, 0.1);
             border-radius: 10px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-            text-align: center;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            transition: box-shadow 0.3s ease;
+        }
+        #main:hover {
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
         }
         
         /* Intro Styling */
@@ -88,6 +96,10 @@
             padding: 15px;
             border-left: 4px solid #ffcb05;
             text-align: left;
+            transition: background-color 0.3s ease;
+        }
+        .subsection:hover {
+            background-color: rgba(255, 203, 5, 0.1);
         }
         .subsection h2 {
             color: #ffcb05;
@@ -116,7 +128,7 @@
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
-            transition: background-color 0.3s, transform 0.2s;
+            transition: background-color 0.3s ease, transform 0.2s ease;
         }
         .download-resume:hover {
             background-color: #ff6347;
