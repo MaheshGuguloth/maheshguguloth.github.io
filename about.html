@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnH/PrY+PLT3rXzIs4ozqtdQFzYgL0O9cwFyJWgRYoGr4uaKQ04KgY07FhrSjeicNLvVd1eHg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style>
-        /* Styling */
+        /* Basic Styling */
         body {
             font-family: Arial, sans-serif;
             color: #fff;
@@ -16,25 +16,17 @@
             padding: 0;
         }
 
-        /* Header */
+        /* Header Section */
         #header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 20px;
-            background-color: rgba(0, 0, 0, 0.6);
-            border-bottom: 2px solid #ffcb05;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         #header .logo {
-            font-size: 2em;
+            font-size: 1.8em;
             text-decoration: none;
-            color: #ffcb05;
-            font-weight: bold;
-            transition: color 0.3s ease-in-out;
-        }
-        #header .logo:hover {
-            color: #ff6347;
+            color: #fff;
         }
         #header .menu {
             display: flex;
@@ -42,31 +34,31 @@
             align-items: center;
         }
         #header .menu a {
-            color: #ffcb05;
+            color: #fff;
             text-decoration: none;
             font-weight: bold;
-            transition: color 0.3s ease-in-out;
+            transition: color 0.3s;
         }
         #header .menu a:hover {
-            color: #ff6347;
+            color: #ffcb05;
         }
 
-        /* Icons */
+        /* Contact Icons in Header */
         .header-icons a {
             color: #ffcb05;
             margin-left: 10px;
             font-size: 1.2em;
-            transition: color 0.3s ease, transform 0.2s ease;
+            transition: color 0.3s, transform 0.2s;
         }
         .header-icons a:hover {
             color: #ff6347;
             transform: scale(1.1);
         }
 
-        /* Main Section */
+        /* Main Section Layout */
         #main {
-            max-width: 800px;
-            margin: 40px auto;
+            max-width: 1000px;
+            margin: 0 auto;
             padding: 40px 20px;
             background-color: rgba(255, 255, 255, 0.1);
             border-radius: 10px;
@@ -77,7 +69,7 @@
             box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
         }
         
-        /* Intro Styling */
+        /* Intro Text Styling */
         .intro h1 {
             font-size: 2.5em;
             color: #ffcb05;
@@ -118,7 +110,7 @@
             padding-left: 20px;
         }
 
-        /* Download Button */
+        /* Download Button Styling */
         .download-resume {
             display: inline-block;
             padding: 12px 25px;
@@ -128,14 +120,14 @@
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
-            transition: background-color 0.3s ease, transform 0.2s ease;
+            transition: background-color 0.3s ease, transform 0.2s;
         }
         .download-resume:hover {
             background-color: #ff6347;
             transform: scale(1.05);
         }
 
-        /* Footer */
+        /* Footer Section */
         footer {
             font-size: 0.8em;
             color: #ffcb05;
@@ -146,14 +138,14 @@
             border-top: 2px solid #ffcb05;
         }
 
-        /* Responsive */
+        /* Responsive Design */
         @media (max-width: 768px) {
             #header {
                 flex-direction: column;
                 align-items: center;
             }
             #header .logo {
-                font-size: 1.8em;
+                font-size: 1.5em;
                 margin-bottom: 10px;
             }
             #header .menu {
@@ -193,7 +185,7 @@
 </head>
 <body>
 
-    <!-- Header -->
+    <!-- Header Section -->
     <header id="header">
         <a href="index.html" class="logo">Mahesh Naik Guguloth</a>
         <nav class="menu">
@@ -202,6 +194,8 @@
             <a href="projects.html">Projects</a>
             <a href="skills.html">Technical Skills</a>
             <a href="certifications.html">Certifications</a>
+            
+            <!-- Contact Icons in Header -->
             <div class="header-icons">
                 <a href="https://www.linkedin.com/in/mahesh-g-072670321/" target="_blank" class="fab fa-linkedin" title="LinkedIn"></a>
                 <a href="tel:+18383330428" class="fas fa-phone" title="Call"></a>
@@ -211,49 +205,62 @@
         </nav>
     </header>
 
-    <!-- Main Content -->
+    <!-- Main Content Section -->
     <div id="main">
         <div class="intro">
             <h1>About Me</h1>
-            <p>Hi, I'm Mahesh Naik Guguloth, a passionate Data Engineer with over 4 years of hands-on experience in designing, building, and optimizing scalable data solutions. I specialize in creating secure ETL workflows and data pipelines to enable data-informed decisions.</p>
+            <p>Hi, I'm Mahesh Naik Guguloth, a Data Engineer with over 4 years of experience in designing, building, and optimizing scalable data solutions. My career is driven by a commitment to harness the power of data to drive actionable insights and enable data-informed decision-making across organizations.</p>
         </div>
 
+        <!-- Professional Summary Section -->
         <div class="subsection">
             <h2>Professional Summary</h2>
-            <p>I bring extensive experience in AWS and Snowflake, where I specialize in high-performance data solutions. I focus on optimizing ETL workflows and ensuring data security through IAM and encryption best practices.</p>
+            <p>I am proficient in developing efficient ETL workflows, securing data access, and streamlining data processing pipelines to enhance performance and accessibility. My technical expertise spans advanced SQL, big data technologies like Hadoop and Spark, and cloud engineering, where I've consistently delivered optimized solutions that reduce processing time and improve query performance.</p>
         </div>
 
+        <!-- Core Technical Skills Section -->
         <div class="subsection">
             <h2>Core Technical Skills</h2>
-            <p><strong>Data Engineering & ETL:</strong> Proficient in AWS Glue, Kinesis, and SSIS.</p>
-            <p><strong>Big Data & Cloud:</strong> Skilled in Hadoop, Spark, AWS, Snowflake, and Redshift.</p>
-            <p><strong>Security & Compliance:</strong> Expertise in AWS IAM, encryption standards, and GDPR compliance.</p>
+            <p><strong>Data Engineering & ETL:</strong> Expert in tools like AWS Glue, Kinesis, and SSIS to automate and streamline data processing. Known for building workflows that handle large datasets efficiently, with a focus on scalability.</p>
+            <p><strong>Big Data & Cloud:</strong> Skilled in Hadoop, Spark, AWS, and Snowflake, allowing for advanced big data processing. I design solutions that support high-volume data analysis for quick, actionable insights.</p>
+            <p><strong>Security & Compliance:</strong> Experienced in implementing AWS IAM, encryption protocols, and GDPR compliance to ensure that data is secure and accessible only to authorized personnel.</p>
         </div>
 
+        <!-- Approach to Data Engineering Section -->
         <div class="subsection">
             <h2>Approach to Data Engineering</h2>
-            <p>My approach is centered on efficiency, collaboration, and scalable solutions. I leverage CI/CD best practices to streamline deployment and deliver impactful data workflows.</p>
+            <p>My approach centers on problem-solving, efficiency, and collaboration. I leverage robust data models, optimize query performance, and utilize best practices in CI/CD to streamline data operations. Whether it’s tuning a query for faster execution or integrating multiple data sources, I aim to deliver impactful results that improve the overall data architecture.</p>
         </div>
 
+        <!-- Key Achievements Section -->
         <div class="subsection">
             <h2>Key Achievements</h2>
             <ul>
-                <li>Reduced ETL processing time by 40% through automation.</li>
-                <li>Improved query performance by 30% with profiling tools.</li>
-                <li>Developed real-time data transformations with 40% time reduction.</li>
+                <li>Reduced ETL processing time by 40% through workflow automation, allowing for more agile data processing.</li>
+                <li>Enhanced query performance by 30% using profiling tools, supporting faster analytics and reporting for stakeholders.</li>
+                <li>Developed real-time data transformations that reduced processing time by 40% and minimized manual interventions.</li>
             </ul>
         </div>
 
+        <!-- Commitment to Learning Section -->
+        <div class="subsection">
+            <h2>Commitment to Learning</h2>
+            <p>I'm passionate about continuous learning, regularly updating my skill set with new certifications and technologies. Recently, I earned the SnowPro Core Certification and continue to expand my expertise in cloud data solutions, machine learning frameworks, and big data processing.</p>
+        </div>
+
+        <!-- Education Section -->
         <div class="subsection">
             <h2>Education</h2>
             <p><strong>Master of Science in Data Science</strong> - State University of New York at Albany</p>
+            <p>Advanced coursework in machine learning, big data analytics, and data engineering, equipping me with a strong foundation in data processing, modeling, and visualization.</p>
             <p><strong>Bachelor of Engineering in Electronics and Communication</strong> - Sreenidhi Institute of Science and Technology</p>
+            <p>Studied core engineering principles with a focus on data transmission, digital systems, and analytics, providing a strong technical base that seamlessly transitioned into my data engineering career.</p>
         </div>
 
         <a href="images/Mahesh Naik Guguloth Resume.pdf" download class="download-resume">Download Resume</a>
     </div>
 
-    <!-- Footer -->
+    <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 Mahesh Naik Guguloth. All Rights Reserved.</p>
     </footer>
