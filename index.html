@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
     <title>Mahesh Naik Guguloth</title>
     <meta charset="utf-8" />
@@ -23,6 +23,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 20px;
+            background-color: #3b5998;
         }
         #header .logo {
             font-size: 1.8em;
@@ -78,9 +79,29 @@
             font-size: 2.5em;
             font-weight: bold;
             color: #ffcb05;
+            margin-bottom: 10px;
         }
         .intro p {
             font-size: 1.2em;
+            line-height: 1.6;
+            text-align: justify;
+            margin-bottom: 10px;
+        }
+
+        /* "Who I Am" Section */
+        .who-i-am {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #2d4373;
+            border-radius: 8px;
+        }
+        .who-i-am h2 {
+            font-size: 2em;
+            color: #ffcb05;
+            margin-bottom: 10px;
+        }
+        .who-i-am p {
+            font-size: 1.1em;
             line-height: 1.6;
             text-align: justify;
         }
@@ -92,58 +113,64 @@
             text-align: center;
             padding: 10px 0;
         }
-        /* Responsive Design */
-        /* Responsive Styling */
-@media (max-width: 768px) {
-    #header {
-        flex-direction: column;
-        align-items: center;
-    }
-    #header .logo {
-        font-size: 1.5em;
-        margin-bottom: 10px;
-    }
-    #header .menu {
-        flex-direction: column;
-        gap: 10px;
-    }
-    #header .header-icons {
-        margin-top: 10px;
-    }
-    #main {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 20px;
-    }
-    .profile-pic img {
-        width: 70%;
-        margin-bottom: 20px;
-    }
-    .intro h1 {
-        font-size: 2em;
-    }
-    .intro p {
-        font-size: 1em;
-        padding: 0 10px;
-    }
-}
 
-@media (max-width: 480px) {
-    .header-icons a {
-        font-size: 1em;
-        margin: 0 5px;
-    }
-    .intro h1 {
-        font-size: 1.8em;
-    }
-    .intro p {
-        font-size: 0.9em;
-    }
-    footer {
-        font-size: 0.7em;
-    }
-}
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            #header {
+                flex-direction: column;
+                align-items: center;
+            }
+            #header .logo {
+                font-size: 1.5em;
+                margin-bottom: 10px;
+            }
+            #header .menu {
+                flex-direction: column;
+                gap: 10px;
+            }
+            #header .header-icons {
+                margin-top: 10px;
+            }
+            #main {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 20px;
+            }
+            .profile-pic img {
+                width: 70%;
+                margin-bottom: 20px;
+            }
+            .intro h1 {
+                font-size: 2em;
+            }
+            .intro p {
+                font-size: 1em;
+                padding: 0 10px;
+            }
+            .who-i-am h2 {
+                font-size: 1.8em;
+            }
+            .who-i-am p {
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-icons a {
+                font-size: 1em;
+                margin: 0 5px;
+            }
+            .intro h1 {
+                font-size: 1.8em;
+            }
+            .intro p, .who-i-am p {
+                font-size: 0.9em;
+            }
+            footer {
+                font-size: 0.7em;
+            }
+        }
 
     </style>
 </head>
@@ -184,6 +211,12 @@
             <p>My expertise lies in leveraging AWS technologies, including AWS Glue, S3, and Athena, to streamline workflows, reduce processing times, and deliver seamless data solutions tailored to organizational needs. I am dedicated to continuously advancing my practices to help organizations unlock the full potential of their data, enabling impactful, data-driven decisions.</p>
         </div>
     </div>
+
+    <!-- "Who I Am" Section -->
+    <section class="who-i-am">
+        <h2>Who I Am</h2>
+        <p>I am a forward-thinking Data Engineer committed to delivering high-impact solutions through innovation and collaboration. My journey is driven by a desire to make data more accessible, reliable, and insightful, empowering organizations to thrive in a data-centric world. With a background in cloud technologies and a hands-on approach, I continuously seek to refine my skills and expand my expertise in the rapidly evolving field of data engineering.</p>
+    </section>
 
     <!-- Footer Section -->
     <footer>
